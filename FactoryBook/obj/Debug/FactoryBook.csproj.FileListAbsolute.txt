@@ -58,3 +58,5 @@ C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook\obj\Debug\Pages\Staff\Loa
 C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook\obj\Debug\Pages\Staff\Loans\DisbursedLoans.baml
 C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook\obj\Debug\Pages\Staff\Loans\LoanHistory.baml
 C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook\obj\Debug\Pages\Staff\Loans\PendingLoans.baml
+C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook\obj\Debug\Pages\Staff\Loans\NewLoan.g.cs
+C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook\obj\Debug\Pages\Staff\Loans\NewLoan.baml
