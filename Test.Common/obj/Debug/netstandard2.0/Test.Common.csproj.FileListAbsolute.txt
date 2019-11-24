@@ -1,0 +1,7 @@
+C:\Users\j.chioma\source\repos\FactoryBook\Test.Common\bin\Debug\netstandard2.0\Test.Common.deps.json
+C:\Users\j.chioma\source\repos\FactoryBook\Test.Common\bin\Debug\netstandard2.0\Test.Common.dll
+C:\Users\j.chioma\source\repos\FactoryBook\Test.Common\bin\Debug\netstandard2.0\Test.Common.pdb
+C:\Users\j.chioma\source\repos\FactoryBook\Test.Common\obj\Debug\netstandard2.0\Test.Common.AssemblyInfoInputs.cache
+C:\Users\j.chioma\source\repos\FactoryBook\Test.Common\obj\Debug\netstandard2.0\Test.Common.AssemblyInfo.cs
+C:\Users\j.chioma\source\repos\FactoryBook\Test.Common\obj\Debug\netstandard2.0\Test.Common.dll
+C:\Users\j.chioma\source\repos\FactoryBook\Test.Common\obj\Debug\netstandard2.0\Test.Common.pdb

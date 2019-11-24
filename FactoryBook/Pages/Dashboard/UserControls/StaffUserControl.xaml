@@ -1,0 +1,145 @@
+﻿<UserControl x:Class="FactoryBook.Pages.Dashboard.UserControls.StaffUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FactoryBook.Pages.Dashboard.UserControls"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+    <Grid>
+        
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        
+            <Grid x:Name="employeeRow" Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="2.5*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Label Content="Employee" Foreground="#FF116FA4" FontSize="15" FontFamily="Segoe UI"/>
+                </Grid>
+            <Grid Grid.Row="1">
+                <ListView x:Name="EmployeeListViewMenu" Foreground="#FF116FA4"  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListViewItem}">
+                            <Setter Property="Background" Value="Transparent" />
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                        <ContentPresenter />
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <StackPanel Height="100" Width="760" Margin="12,30,30,0" Orientation="Horizontal">
+                            <ListViewItem x:Name="ItemHome" Height="100">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="AccountAdd" Height="60" Width="60" Margin="10"/>
+                                    <TextBlock Text="New Staff" VerticalAlignment="Center" FontSize="25" Margin="10"/>
+                                </StackPanel>
+                            </ListViewItem>
+                            <ListViewItem x:Name="ItemCreate" Height="100">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="PersonEdit" Height="60" Width="60" Margin="10"/>
+                                    <TextBlock Text="Manage Staff" VerticalAlignment="Center" FontSize="25" Margin="10"/>
+                                </StackPanel>
+                            </ListViewItem>
+                            <ListViewItem x:Name="ManageRoles" Height="100">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="PersonEdit" Height="60" Width="60" Margin="10"/>
+                                    <TextBlock Text="Manage Roles" VerticalAlignment="Center" FontSize="25" Margin="10"/>
+                                </StackPanel>
+                            </ListViewItem>
+                        </StackPanel>
+                    </ListView>
+                </Grid>
+
+            </Grid>
+            <Grid x:Name="departmentRow" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="2.5*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Label Content="Department" Foreground="#FF116FA4" FontSize="15" FontFamily="Segoe UI"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <ListView x:Name="DepartmentListViewMenu" Foreground="#FF116FA4" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListViewItem}">
+                            <Setter Property="Background" Value="Transparent" />
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                        <ContentPresenter />
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <StackPanel Height="100" Width="600" Margin="100,30,30,0" Orientation="Horizontal">
+                            <ListViewItem x:Name="AddDepartmentView" Height="100">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="PeopleAdd" Height="60" Width="60" Margin="10"/>
+                                    <TextBlock Text="Add Department" VerticalAlignment="Center" FontSize="25" Margin="10"/>
+                                </StackPanel>
+                            </ListViewItem>
+                            <ListViewItem x:Name="EditDepartmentView" Height="100">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="PersonEdit" Height="60" Width="60" Margin="10"/>
+                                    <TextBlock Text="Edit/View" VerticalAlignment="Center" FontSize="25" Margin="10"/>
+                                </StackPanel>
+                            </ListViewItem>
+                        </StackPanel>
+                    </ListView>
+                </Grid>
+
+            </Grid>
+            <Grid x:Name="loanRow" Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="2.5*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Label Content="Loans" Foreground="#FF116FA4" FontSize="15" FontFamily="Segoe UI"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <ListView x:Name="LoanListViewMenu" Foreground="#FF116FA4" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListViewItem}">
+                            <Setter Property="Background" Value="Transparent" />
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                        <ContentPresenter />
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <StackPanel Height="100" Width="600" Margin="100,30,30,0" Orientation="Horizontal">
+                            <ListViewItem x:Name="PendingLoanView" Height="100">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="Pause" Height="60" Width="60" Margin="10"/>
+                                    <TextBlock Text="Pending Approval" VerticalAlignment="Center" FontSize="25" Margin="10"/>
+                                </StackPanel>
+                            </ListViewItem>
+                            <ListViewItem x:Name="LoanHistoryView" Height="100">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="History" Height="60" Width="60" Margin="10"/>
+                                    <TextBlock Text="Loan History" VerticalAlignment="Center" FontSize="25" Margin="10"/>
+                                </StackPanel>
+                            </ListViewItem>
+                        </StackPanel>
+                    </ListView>
+                </Grid>
+
+            </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,56 @@
+﻿<Window x:Class="FactoryBook.LoginForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:pbox="clr-namespace:FactoryBook.AttachedProperties"
+        xmlns:local="clr-namespace:FactoryBook"
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Login" Width="740.8" Height="502.4" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <materialDesign:Card Grid.Column="0" VerticalAlignment="Stretch" Background="#FF116FA4" Padding="32">
+
+        </materialDesign:Card>
+        <Grid Grid.Column="1">
+            <materialDesign:PackIcon HorizontalAlignment="Right" Kind="Close" VerticalAlignment="Top" Foreground="#707070" PreviewMouseDown="HomeImage_PreviewMouseDown"/>
+            <Grid Margin="0,0,0,20">
+
+            </Grid>
+            <Image Margin="-10,20,9.4,362.4" Source="/Assets/FactoryBookLogo.png" Height="120"/>
+
+
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                <Grid>
+                    <TextBlock Height="62" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="26,16,-17.6,0" Name="textBlockHeading" VerticalAlignment="Top" FontSize="9" FontStyle="Italic" Padding="5" Width="362">  
+                    Note: Please login here to view the features of this site. If you are new on this site, <LineBreak/>
+                    please contact the Administrator to create an account for you.
+                    </TextBlock>
+
+                    <!--ff:PasswordBoxAssistant.BindPassword="true"  ff:PasswordBoxAssistant.BoundPassword="{Binding Path=Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"-->
+
+                    <TextBox Text="{Binding Path = Email, Mode = TwoWay}" materialDesign:HintAssist.Hint="Email" Height="23" HorizontalAlignment="Left" Margin="80,95,0,0" Name="textBoxEmail" VerticalAlignment="Top" Width="247" />
+                    <PasswordBox pbox:PasswordBoxAssistant.BindPassword="True" pbox:PasswordBoxAssistant.BoundPassword="{Binding Path=Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Password" Height="23" HorizontalAlignment="Left" Margin="81,152,0,0" Name="passwordBox1" VerticalAlignment="Top" Width="247" />
+                    <Button Content="Login" Height="30" HorizontalAlignment="Center" Command="{Binding LoginCommand}" Margin="146,218,130,0" Name="button1" VerticalAlignment="Top" Width="104"  />
+                    <TextBlock Text="{Binding Path=ErrorMessage, Mode=TwoWay}" Height="13" HorizontalAlignment="Left" x:Name ="errormessage" VerticalAlignment="Top" TextWrapping="NoWrap" Margin="98,187,0,0"  OpacityMask="Crimson" Foreground="#FFE5572C"  />
+                </Grid>
+            </Grid>
+            <!--Text="{Binding Path=ErrorMessage, Mode=TwoWay}"-->
+            <!--Click="Button1_Click"-->
+            <!--Command="{Binding Path=LoginCommand}"-->
+
+
+            <TextBlock FontSize="9" FontStyle="Normal" Foreground="Coral" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="99,0,99.4,0">
+                ©2019. Designed by Hert Technologies Ltd.
+            </TextBlock>
+
+
+        </Grid>
+
+    </Grid>
+</Window>

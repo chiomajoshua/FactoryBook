@@ -1,0 +1,96 @@
+﻿<Page x:Class="FactoryBook.Pages.Staff.Employee.EmployeePages.EmploymentInfo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FactoryBook.Pages.Staff.Employee.EmployeePages"
+      mc:Ignorable="d" 
+     Title="EmploymentInfo" Height="400" Width="950">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="0.7*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Label FontSize="18" VerticalAlignment="Center" Content="Job Title"/>
+            </Grid>
+            <Grid Grid.Column="1" Margin="0,0,10,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBox Grid.Row="0" VerticalAlignment="Center" Height="40" HorizontalAlignment="Stretch" FontSize="20" />
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" Margin="0,15,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="0.7*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Label FontSize="18" VerticalAlignment="Center" Content="Commencement Date"/>
+            </Grid>
+            <Grid Grid.Column="1" Margin="0,0,5,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <DatePicker Grid.Column="0" SelectedDate="2000-12-31" Width="200" FontSize="17" Margin="10,0,10,0" SelectedDateFormat="Short"/>
+            </Grid>            
+        </Grid>
+        <Grid Grid.Row="2" Margin="0,5,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="0.7*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Margin="0,0,-3,0">
+                <Label FontSize="18" VerticalAlignment="Center" Content="File Tax Number"/>
+            </Grid>
+            <Grid Grid.Column="1" Margin="0,0,10,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0" Margin="10,0,10,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="0.5*"/>
+                        </Grid.RowDefinitions>
+                        <TextBox Grid.Row="0" VerticalAlignment="Center" Height="40" HorizontalAlignment="Stretch" FontSize="20" />
+                    </Grid>
+                </Grid>
+
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.4*"/>
+                <ColumnDefinition Width="0.4*"/>
+                <ColumnDefinition Width="0.4*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Margin="0,0,-3,0">
+                <Label FontSize="18" VerticalAlignment="Center" Content="Employment Status"/>
+            </Grid>
+            <Grid Grid.Column="1" Margin="0,0,10,0">
+                <RadioButton VerticalAlignment="Center" FontSize="17" Content="Full-Time" IsChecked="True"/>
+            </Grid>
+            <Grid Grid.Column="2" Margin="0,0,10,0">
+                <RadioButton VerticalAlignment="Center" FontSize="17" Margin="10,0,10,0" Content="Part-Time" IsChecked="False"/>
+            </Grid>
+            <Grid Grid.Column="3" Margin="0,0,10,0">
+                <RadioButton VerticalAlignment="Center" VerticalContentAlignment="Center" FontSize="17" Margin="10,0,10,0" Content="Temporary" IsChecked="False"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

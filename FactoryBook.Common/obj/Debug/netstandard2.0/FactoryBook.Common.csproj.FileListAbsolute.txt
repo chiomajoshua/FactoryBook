@@ -1,0 +1,8 @@
+C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook.Common\bin\Debug\netstandard2.0\FactoryBook.Common.deps.json
+C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook.Common\bin\Debug\netstandard2.0\FactoryBook.Common.dll
+C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook.Common\bin\Debug\netstandard2.0\FactoryBook.Common.pdb
+C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook.Common\obj\Debug\netstandard2.0\FactoryBook.Common.csprojAssemblyReference.cache
+C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook.Common\obj\Debug\netstandard2.0\FactoryBook.Common.AssemblyInfoInputs.cache
+C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook.Common\obj\Debug\netstandard2.0\FactoryBook.Common.AssemblyInfo.cs
+C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook.Common\obj\Debug\netstandard2.0\FactoryBook.Common.dll
+C:\Users\j.chioma\source\repos\FactoryBook\FactoryBook.Common\obj\Debug\netstandard2.0\FactoryBook.Common.pdb
