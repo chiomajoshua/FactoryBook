@@ -174,7 +174,7 @@
                             <ColumnDefinition Width="2*"/>
                         </Grid.ColumnDefinitions>
                         <Grid Grid.Column="0" Background="#F7C65F">
-                            <materialDesign:PackIcon VerticalAlignment="Center" Foreground="#FFFFFF" HorizontalAlignment="Center" Kind="UserGroup" Height="60" Width="60" Margin="10"/>
+                            <materialDesign:PackIcon VerticalAlignment="Center" Foreground="#FFFFFF" HorizontalAlignment="Center" Kind="Seed" Height="60" Width="60" Margin="10"/>
                         </Grid>
                         <Grid Grid.Column="1" Background="#F7C65F">
                             <Grid.RowDefinitions>
@@ -182,7 +182,7 @@
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <Grid Grid.Row="0" Margin="0,0,-0.4,94" Grid.RowSpan="2">
-                                <Label Foreground="#FFFFFF" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="No. Of Departments" FontFamily="SegoeUI"/>
+                                <Label Foreground="#FFFFFF" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Raw Materials" FontFamily="SegoeUI"/>
                             </Grid>
                             <Grid Grid.Row="1">
                                 <Label Foreground="#FFFFFF" FontSize="80" VerticalAlignment="Top" HorizontalAlignment="Center" Content="15" FontFamily="SegoeUI"/>
